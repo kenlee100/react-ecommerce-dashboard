@@ -56,7 +56,7 @@ export default function OrderPage() {
         keyboard: false,
       });
     }
-  }, [orderModalRef.current]);
+  }, []);
 
   const openModal = useCallback(function (product, type) {
     setTempOrder({

@@ -40,11 +40,11 @@ function LayoutContent() {
   const navigate = useNavigate();
 
   const isLoading = useSelector(selectLoading);
-  const { isAuth, verifyAuth } = useAuth(checkUserLogin);
+  const { verifyAuth } = useAuth(checkUserLogin);
 
   useEffect(() => {
     verifyAuth();
-  }, []);
+  }, [verifyAuth]);
 
   async function handleLogout() {
     dispatch(setIsLoading(true));

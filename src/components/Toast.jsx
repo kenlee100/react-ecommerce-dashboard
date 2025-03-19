@@ -21,7 +21,7 @@ function ToastComponent() {
         }, TOAST_DURATION);
       }
     });
-  }, [messages]);
+  }, [messages, dispatch]);
 
   function closeToast(messageId) {
     dispatch(removeToast(messageId));

@@ -52,7 +52,7 @@ function ProductsPage() {
         page: 1,
       })
     );
-  }, [isAuth]);
+  }, [isAuth, dispatch]);
 
   useEffect(() => {
     if (productModalRef.current) {
@@ -61,7 +61,7 @@ function ProductsPage() {
         keyboard: false,
       });
     }
-  }, [productModalRef.current]);
+  }, []);
 
   const openProductModal = useCallback(function (product, type) {
     setTempProduct({

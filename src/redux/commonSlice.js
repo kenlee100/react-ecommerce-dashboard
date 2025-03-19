@@ -1,4 +1,4 @@
-import { createSlice, isAnyOf } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 export const errorMessage = (error) => {
   return {
@@ -20,41 +20,6 @@ export const commonSlice = createSlice({
       state.modalModifySuccess = action.payload;
     },
   },
-  // extraReducers: (builder) => {
-  //   // addMatcher：可以把多個非同步組合在一起。要搭配 isAnyOf
-  //   // addCase：一次加一個
-  //   // 控制 admin loading
-  //   // builder.addMatcher(
-  //   //   isAnyOf(
-  //   //     asyncProductsData.fulfilled,
-  //   //     asyncUpdateProduct.fulfilled,
-  //   //     asyncDeleteProductData.fulfilled
-  //   //   ),
-  //   //   (state) => {
-  //   //     state.isLoading = false;
-  //   //   }
-  //   // );
-  //   // builder.addMatcher(
-  //   //   isAnyOf(
-  //   //     asyncUpdateProduct.pending,
-  //   //     asyncProductsData.pending,
-  //   //     asyncDeleteProductData.pending
-  //   //   ),
-  //   //   (state) => {
-  //   //     state.isLoading = true;
-  //   //   }
-  //   // );
-  //   // builder.addMatcher(
-  //   //   isAnyOf(
-  //   //     asyncUpdateProduct.rejected,
-  //   //     asyncProductsData.rejected,
-  //   //     asyncDeleteProductData.rejected
-  //   //   ),
-  //   //   (state) => {
-  //   //     state.isLoading = false;
-  //   //   }
-  //   // );
-  // },
 });
 
 export const { setIsLoading, setModalModifySuccess, setOrders } =

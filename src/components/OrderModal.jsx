@@ -28,7 +28,7 @@ function OrderModalComponent({ tempOrder, closeModal, modalType }, ref) {
       closeModal();
       dispatch(setModalModifySuccess(false));
     }
-  }, [modalModifySuccess]);
+  }, [modalModifySuccess, dispatch, closeModal]);
 
   async function updateOrderData() {
     const callApi = {

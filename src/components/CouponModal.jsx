@@ -53,7 +53,7 @@ function CouponModalComponent({ tempCoupon, closeModal, modalType }, ref) {
       closeModal();
       dispatch(setModalModifySuccess(false));
     }
-  }, [modalModifySuccess]);
+  }, [modalModifySuccess, dispatch, closeModal]);
 
   async function updateCouponData() {
     const callApi = {

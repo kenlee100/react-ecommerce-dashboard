@@ -34,7 +34,7 @@ function ProductModalComponent(
       closeProductModal();
       dispatch(setModalModifySuccess(false));
     }
-  }, [modalModifySuccess]);
+  }, [modalModifySuccess, dispatch, closeProductModal]);
 
   async function updateProductsData() {
     const callApi = {

@@ -32,7 +32,7 @@ export default function CouponPage() {
         page: 1,
       })
     );
-  }, []);
+  }, [dispatch]);
 
   const [tempCoupon, setTempCoupon] = useState(couponDefault);
 
@@ -47,7 +47,7 @@ export default function CouponPage() {
         keyboard: false,
       });
     }
-  }, [couponModalRef.current]);
+  }, []);
 
   const openModal = useCallback(function (coupon, type) {
     setTempCoupon({
