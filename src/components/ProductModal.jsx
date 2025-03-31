@@ -157,7 +157,7 @@ function ProductModalComponent(
                   <div className="col-sm-4">
                     <div className="d-flex flex-grow-1 flex-column overflow-y-auto">
                       <div className="mb-3">
-                        <label htmlFor="title" className="form-label">
+                        <label htmlFor="imageUrl" className="form-label">
                           主要圖片
                         </label>
                         <div className="form-group">
@@ -259,7 +259,7 @@ function ProductModalComponent(
                     </div>
                     <div className="row">
                       <div className="mb-3 col-md-6">
-                        <label htmlFor="title" className="form-label">
+                        <label htmlFor="category" className="form-label">
                           分類
                         </label>
                         <input
@@ -273,7 +273,7 @@ function ProductModalComponent(
                         />
                       </div>
                       <div className="mb-3 col-md-6">
-                        <label htmlFor="title" className="form-label">
+                        <label htmlFor="unit" className="form-label">
                           單位
                         </label>
                         <input
@@ -288,7 +288,7 @@ function ProductModalComponent(
                       </div>
                     </div>
                     <div className="mb-3">
-                      <label htmlFor="title" className="form-label">
+                      <label htmlFor="description" className="form-label">
                         描述
                       </label>
                       <textarea
@@ -302,7 +302,7 @@ function ProductModalComponent(
                       ></textarea>
                     </div>
                     <div className="mb-3">
-                      <label htmlFor="title" className="form-label">
+                      <label htmlFor="content" className="form-label">
                         商品內容
                       </label>
                       <textarea
@@ -317,7 +317,7 @@ function ProductModalComponent(
                     </div>
                     <div className="row">
                       <div className="mb-3 col-md-6">
-                        <label htmlFor="title" className="form-label">
+                        <label htmlFor="origin_price" className="form-label">
                           原價
                         </label>
                         <input
@@ -328,10 +328,11 @@ function ProductModalComponent(
                           value={modalData.origin_price}
                           onChange={handleInputChange}
                           placeholder="請輸入數字"
+                          min="0"
                         />
                       </div>
                       <div className="mb-3 col-md-6">
-                        <label htmlFor="title" className="form-label">
+                        <label htmlFor="price" className="form-label">
                           售價
                         </label>
                         <input
@@ -342,6 +343,7 @@ function ProductModalComponent(
                           value={modalData.price}
                           onChange={handleInputChange}
                           placeholder="請輸入數字"
+                          min="0"
                         />
                       </div>
                     </div>

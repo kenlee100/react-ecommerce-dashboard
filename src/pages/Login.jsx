@@ -76,7 +76,7 @@ export default function LoginPage() {
                     required
                     autoFocus
                   />
-                  <label htmlFor="username">Email address</label>
+                  <label htmlFor="email">Email address</label>
                 </div>
                 {errors?.email && (
                   <div className="pt-1 invalid-feedback">
